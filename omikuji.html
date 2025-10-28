@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ - Fortune Teller</title>
+    <link rel="stylesheet" href="omikuji.css">
+</head>
+<body>
+    <div class="background">
+        <div class="stars"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="title">🎋 おみくじ 🎋</h1>
+            <p class="subtitle">今日の運勢を占いましょう</p>
+        </header>
+
+        <div class="omikuji-box" id="omikujiBox">
+            <div class="box-lid" id="boxLid"></div>
+            <div class="box-body">
+                <div class="stick-container" id="stickContainer">
+                    <div class="stick" id="stick">
+                        <div class="stick-text">引く</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="draw-button" id="drawButton">
+            <span class="button-text">おみくじを引く</span>
+            <span class="button-icon">🎴</span>
+        </button>
+
+        <div class="result-container" id="resultContainer">
+            <div class="result-card">
+                <div class="result-header">
+                    <h2 class="result-title" id="resultTitle"></h2>
+                    <div class="result-emoji" id="resultEmoji"></div>
+                </div>
+                <div class="fortune-level" id="fortuneLevel"></div>
+                <div class="result-content">
+                    <div class="fortune-item">
+                        <span class="fortune-label">総合運:</span>
+                        <span class="fortune-text" id="generalFortune"></span>
+                    </div>
+                    <div class="fortune-item">
+                        <span class="fortune-label">恋愛運:</span>
+                        <span class="fortune-text" id="loveFortune"></span>
+                    </div>
+                    <div class="fortune-item">
+                        <span class="fortune-label">金運:</span>
+                        <span class="fortune-text" id="moneyFortune"></span>
+                    </div>
+                    <div class="fortune-item">
+                        <span class="fortune-label">健康運:</span>
+                        <span class="fortune-text" id="healthFortune"></span>
+                    </div>
+                    <div class="fortune-item">
+                        <span class="fortune-label">ラッキーカラー:</span>
+                        <span class="fortune-text" id="luckyColor"></span>
+                    </div>
+                    <div class="fortune-item">
+                        <span class="fortune-label">ラッキーナンバー:</span>
+                        <span class="fortune-text" id="luckyNumber"></span>
+                    </div>
+                    <div class="advice-section">
+                        <h3>今日のアドバイス</h3>
+                        <p class="advice-text" id="adviceText"></p>
+                    </div>
+                </div>
+                <button class="retry-button" id="retryButton">
+                    もう一度引く
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="particles" id="particles"></div>
+
+    <script src="omikuji.js"></script>
+</body>
+</html>
